@@ -1,0 +1,33 @@
+.gradiente {
+  width: 100%;
+  height: 400px;
+  min-height: 100%;
+  background-color: black;
+  background-image: linear-gradient(to right, black, #C00, black);
+  background-size: 80% 5px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.gradiente-radial-central {
+  background-image: radial-gradient(yellow, red);
+  width: 100%;
+  height: 400px;
+}
+
+.gradiente-radial-modificado {
+  background-image: radial-gradient(circle at bottom left, yellow, red);
+  width: 100%;
+  height: 400px;
+}
+.gradiente-radial-com-circulo {
+  background-image: radial-gradient(circle at bottom right,
+    yellow,
+    yellow 20%,
+    black 20%,
+    black 30%,
+    yellow 30%,
+    yellow);
+    width: 100%;
+    height: 400px;
+}
