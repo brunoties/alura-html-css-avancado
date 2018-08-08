@@ -48,7 +48,6 @@
 #pseudoelementos
   ::first-letter
   :before
-  content:'';
-
+    content:'';
   :after
     content:'';
