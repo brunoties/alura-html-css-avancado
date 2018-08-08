@@ -1,10 +1,3 @@
-/*
-#Formulas para o quanto temos que transladar na horizontal e na vertical
-
-Na horizontal: cos(45) * (altura - largura) + largura
-
-Na vertical: -1 * sen(45) * altura
-*/
 .foto-home {
   height: 200px;
   border-radius: 50%;
@@ -46,6 +39,10 @@ Na vertical: -1 * sen(45) * altura
   display: block;
   text-align: center;
   box-shadow: 0 0 1em black, inset 0 0 .5em white;
+}
+.botao-index:hover {
+  background-color: #fff;
+  color: #851944;
 }
 .secao-inicio {
   padding: 2em;
@@ -131,9 +128,7 @@ Na vertical: -1 * sen(45) * altura
       overflow-x: hidden;
       height: 100%;
     }
-    body {
 
-    }
     .palavras-home {
       -webkit-transform-style: preserve-3d;
       transform-style: preserve-3d;
@@ -269,6 +264,7 @@ Na vertical: -1 * sen(45) * altura
       font-family: "Open Sans Condensed", sans-serif;
     }
     .blog .inicio-post {
+      display: none;
       position: absolute;
       top: 4em;
       height: 8em;
@@ -278,12 +274,21 @@ Na vertical: -1 * sen(45) * altura
       color: #000;
       padding: 1.5em;
     }
-    .blog .mais-recente {
+    .blog a:hover + .inicio-post,
+    .blog a:focus + .inicio-post {
+      display: block;
+    }
+    .blog a:hover,
+    .blog a:focus {
+      background-color: #F2FFFC;
+      color: #f26;
+    }
+    /* .blog .mais-recente {
       background-color: #F2FFFC;
     }
     .blog .mais-recente a {
       color: #F26;
-    }
+    } */
     .dialogo-index {
       width: 40%;
       background-color: #fff;
@@ -297,7 +302,13 @@ Na vertical: -1 * sen(45) * altura
       text-align: center;
       font-size: 2em;
     }
-    .conteudo-body {
+    /* .conteudo-body {
+      -webkit-perspective: 6px;
+      perspective: 6px;
+      -webkit-perspective-origin: 50% 160px;
+      perspective-origin: 50% 160px;
+    } */
+    body {
       -webkit-perspective: 6px;
       perspective: 6px;
       -webkit-perspective-origin: 50% 160px;

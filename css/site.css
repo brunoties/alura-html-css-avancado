@@ -57,6 +57,11 @@ main p {
   margin-bottom: 1em;
 }
 
+.navegacao-site a:hover,
+.navegacao-site a:focus {
+  text-shadow: 0 0 2px pink;
+}
+
 .rodape-pagina {
   /* background-color: rgba(0,0,0, .3); */
   color: #F2FFFC;
@@ -142,4 +147,11 @@ main p {
     top: 0;
     right: 0;
     height: 300px;
+  }
+
+  main a:hover,
+  main a:focus,
+  footer a:hover,
+  footer a:focus {
+    color: red;
   }

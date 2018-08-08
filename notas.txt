@@ -1,0 +1,46 @@
+
+#Formulas para o quanto temos que transladar na horizontal e na vertical
+
+  Na horizontal: cos(45) * (altura - largura) + largura
+
+  Na vertical: -1 * sen(45) * altura
+
+#seletores css3
+  tag
+  # id
+  . classe
+  ancestral descendente
+  irmao ~ irmao
+  irmao + irmao seguinte
+  pai > filho
+
+#pseudoclasses
+  *estruturais:
+    :nth-first-child
+    :nth-last-child
+    :nth-child
+    :nth-of-type
+    :nth-first-of-type
+    :nth-last-of-type
+    :only-child
+
+  *dinamicas
+    :hover
+    :focus
+    :active
+    :checked
+
+  *exemplos:
+    :nth-child(odd) - linhas ímpares;
+    :nth-child(even) - linhas pares;
+    :nth-child(3) - terceira linha;
+    :first-child - primeira linha;
+    :last-child - última linha.
+
+    Generalizando: :nth-child(xn + c)
+
+    Em que:
+
+    x é a periodicidade, de quantos em quantos elementos será aplicado o estilo;
+    c é o ponto de partida;
+    n é a variável, que começa em 0 (zero).
