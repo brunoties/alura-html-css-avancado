@@ -44,3 +44,11 @@
     x é a periodicidade, de quantos em quantos elementos será aplicado o estilo;
     c é o ponto de partida;
     n é a variável, que começa em 0 (zero).
+
+#pseudoelementos
+  ::first-letter
+  :before
+  content:'';
+
+  :after
+    content:'';
