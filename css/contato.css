@@ -1,0 +1,57 @@
+legend,
+label[for="mensagem"] {
+  font-weight: bold;
+  margin-top: 1em;
+}
+label[for] {
+  display: block;
+}
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  padding: .25em .5em;
+  width: 100%;
+  border: 1px solid #ccc;
+  margin-bottom: 1em;
+}
+fieldset > fieldset {
+  display: inline;
+}
+input:focus {
+  background-color: #FFD;
+}
+input:invalid {
+  box-shadow: 0 0 3px red;
+}
+/* input[outro] ~ input {
+  display: none;
+} */
+
+/* input[value="Outro"]:checked ~ input {
+    display: inline;
+} */
+
+#outro-assunto {
+  display: none;
+}
+option[value="Outro"]:selected #outro-assunto {
+  display: block;
+}
+.btn-enviar {
+  border: 0;
+  padding: .5em 1em;
+  font-family: inherit;
+  font-size: 1.5em;
+  background-color: #3C1D3D;
+  color: white;
+  margin-left: auto;
+  margin-top: 1em;
+  display: block;
+}
+.btn-enviar:focus,
+.btn-enviar:hover {
+  background-color: #8C1D3D;
+}
