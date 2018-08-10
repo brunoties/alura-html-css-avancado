@@ -37,7 +37,7 @@ input:invalid {
 #outro-assunto {
   display: none;
 }
-option[value="Outro"]:selected #outro-assunto {
+option[value="Outro"] {
   display: block;
 }
 .btn-enviar {

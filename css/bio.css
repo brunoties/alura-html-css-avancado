@@ -82,3 +82,12 @@
 .icones-redes-sociais a {
   position: relative;
 }
+
+th {
+  background-color: red;
+}
+
+td {
+  background-color: blue;
+  border: 1px solid black;
+}
