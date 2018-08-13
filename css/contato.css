@@ -26,20 +26,20 @@ input:focus {
 input:invalid {
   box-shadow: 0 0 3px red;
 }
-/* input[outro] ~ input {
-  display: none;
-} */
-
-/* input[value="Outro"]:checked ~ input {
+label[for="outro"] {
     display: inline;
-} */
+}
+input[name="outro-assunto"] {
+    width: auto;
+}
 
-#outro-assunto {
-  display: none;
+input[value="Outro"] ~ input {
+    display: none;
 }
-option[value="Outro"] {
-  display: block;
+input[value="Outro"]:checked ~ input {
+    display: inline;
 }
+
 .btn-enviar {
   border: 0;
   padding: .5em 1em;

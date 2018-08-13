@@ -6,7 +6,6 @@
   margin-right: .2ch;
   line-height: 1;
 }
-
 .citacao-bio {
   background-color: #D9E5E3;
   border: .5em solid #C2CCCA;
@@ -15,11 +14,9 @@
   width: 30ch;
   box-sizing: border-box;
 }
-
 .citacao-bio > p {
   position: relative;
 }
-
 .citacao-bio::before {
   content: '“';
   font-size: 10em;
@@ -27,34 +24,28 @@
   position: absolute;
   line-height: .8;
 }
-
 /* .petrobras { */
 .citacao-bio:nth-of-type(even) {
   float: left;
   margin-left: 0;
 }
-
 /* .fiat { */
 .citacao-bio:nth-of-type(odd) {
   float: right;
   margin-right: 0;
 }
-
 .citacao-bio:hover,
 .citacao-bio:focus {
   box-shadow: 0 0 0 999999px rgba(0,0,0.8);
 }
-
 .citacao-bio:nth-of-type(odd):hover,
 .citacao-bio:nth-of-type(odd):focus {
   transform: scale(1.2) rotate(5deg);
 }
-
 .citacao-bio:nth-of-type(even):hover,
 .citacao-bio:nth-of-type(even):focus {
   transform: scale(1.2) rotate(-5deg);
 }
-
 .icones-redes-sociais a:hover::after,
 .icones-redes-sociais a:focus::after {
   content: attr(data-tooltip);
@@ -66,7 +57,6 @@
   background-color: black;
   font-size: .75em;
 }
-
 .icones-redes-sociais a:hover::before,
 .icones-redes-sociais a:focus::before {
   content: '';
@@ -78,16 +68,45 @@
   left: 0;
   transform: translateY(.5em) rotate(45deg);
 }
-
 .icones-redes-sociais a {
   position: relative;
 }
-
-th {
-  background-color: red;
+.tabela-habilidades {
+  border-collapse: separate;
+  border-spacing: .25em;
+  margin: 1em 0;
+}
+.tabela-habilidades thead th {
+  background-color: #3C1D3D;
+}
+.tabela-habilidades th {
+  font-weight: bold;
+  background-color: #851944;
+  color: white;
+}
+.tabela-habilidades td {
+  background-color: #eee;
+}
+.tabela-habilidades th,
+.tabela-habilidades td {
+  padding: 1em;
+}
+.tabela-habilidades [rowspan] {
+  text-align: center;
+  vertical-align: middle;
+}
+.tabela-habilidades tbody tr:hover {
+  background-color: #851944;
 }
 
+/* .tabela-habilidades tbody tr:nth-child(odd) {
+  background-color: white;
+} */
+/* th {
+  background-color: red;
+  border: 5px solid black;
+}
 td {
   background-color: blue;
-  border: 1px solid black;
-}
+  border: 5px solid black;
+} */
